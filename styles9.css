@@ -1,0 +1,185 @@
+:root{
+    --tampaColor: #aaa;
+    --boxColor: #0ff7;
+    --rotateSpeed:20s;
+}
+p{
+    color: rgba(0, 0, 0, 0.877);
+    text-align: center;
+    font-size: 80px;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+.button{
+    color:white;
+    width: 180px;
+    height: 40px;
+    background: var(--boxColor);
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    padding-top: 10px;
+    user-select:none;
+    transition: .3s;
+}
+.button:hover{
+    background:rgba(10, 212, 212, 0.467);
+    color:#ccc;
+}
+
+.button:active{
+    background:rgba(7, 155, 155, 0.467);
+}
+
+form{
+    position: relative;
+    color: white;
+    text-align: center;
+    text-shadow: black 0 0 0.2em;
+    transition: 0.3s;
+}
+figure{
+    position: absolute;
+    left: -9em;
+    top: -15em;
+}
+input{
+    width: 200px;
+}
+.botao{
+    position: absolute;
+    color: white;
+}
+body{
+    background-color:#000;
+}
+.background{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 40em;
+    perspective-origin: center calc(50% - 18em);
+}
+
+.scene{
+    position: relative;
+    font-size: 75px;
+    transform-style: preserve-3d;
+    animation: sceneRotate var(--rotateSpeed) infinite linear;    
+}
+@keyframes sceneRotate{
+    to{transform: rotatey(360deg);}
+}
+
+
+.vacina{
+    width: 1em;
+    height: 3em;
+    position: absolute;
+    top: -2em;
+    left: -.5em;
+    transform-style: preserve-3d;
+}
+.front, .left, .back, .right, .front-right, .front-left, .back-right, .back-left {
+    position: absolute;
+    background: var(--boxColor);
+    width: 100%;
+    height: 100%;
+    box-shadow: black inset 0 0 0.4em;
+}
+
+.front{transform: translateZ(1.2em);}
+.front-right{transform: rotateY(45deg) translateZ(1.2em);}
+.left{transform: rotateY(90deg) translateZ(1.2em)}
+.back-left{transform: rotateY(135deg) translateZ(1.2em);}
+.back{transform: rotateY(180deg) translateZ(1.2em);}
+.back-right{transform: rotateY(225deg) translateZ(1.2em)}
+.right{transform: rotateY(270deg) translateZ(1.2em);}
+.front-left{transform: rotateY(315deg) translateZ(1.2em)}
+
+.top-top{
+    position: absolute;
+    background: var(--tampaColor);
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    transform: rotatex(90deg) translatez(2.25em);
+    left:-.65em;
+    
+    box-shadow: black inset 0 0 0.4em;
+}
+.top-bottom{
+    position: absolute;
+    background: var(--tampaColor);
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    transform: rotatex(90deg) translatez(1.9em);
+    left: -.65em;
+    box-shadow: black inset 0 0 0.4em;
+}
+
+.top-front, .top-left, .top-back, .top-right, .top-front-right, .top-front-left, .top-back-right, .top-back-left{
+    position:absolute;
+    background:var(--tampaColor);
+    width: 92%;
+    height: .4em;
+    box-shadow: black inset 0 0 0.4em;
+}
+
+.top-front{transform: translateZ(1.1em) translateY(-1.1em);}
+.top-front-right{transform: rotateY(45deg) translateZ(1.1em) translateY(-1.1em);}
+.top-left{transform: rotateY(90deg) translateZ(1.1em) translateY(-1.1em);}
+.top-back-left{transform: rotateY(135deg) translateZ(1.1em) translateY(-1.1em);}
+.top-back{transform: rotateY(180deg) translateZ(1.1em) translateY(-1.1em);}
+.top-back-right{transform: rotateY(225deg) translateZ(1.1em) translateY(-1.1em);}
+.top-right{transform: rotateY(270deg) translateZ(1.1em) translateY(-1.1em);}
+.top-front-left{transform: rotateY(315deg) translateZ(1.1em) translateY(-1.1em);}
+
+.bottom-front, .bottom-side, .bottom-diagonal,.bottom-diagonal-2{
+    width: 100%;
+    position: absolute;
+    height: 2.4em;
+    background: var(--boxColor);
+    box-shadow: black inset 0 0 0.1em;
+}
+.bottom-front{transform: rotatex(90deg) translateZ(-1.8em);}
+.bottom-diagonal{transform:rotatey(45deg) rotatex(90deg) translateZ(-1.8em);}
+.bottom-side{transform:rotatey(90deg) rotatex(90deg) translateZ(-1.8em);}
+.bottom-diagonal-2{transform:rotatey(135deg) rotatex(90deg) translateZ(-1.8em);}
+
+
+.front-triangle, .front-left-triangle, .front-right-triangle, .right-triangle, .left-triangle, .back-right-triangle, .back-left-triangle, .back-triangle{
+    position: absolute;
+    background-color: var(--boxColor);
+    height:1em;
+    width:100%;
+    box-shadow: black inset 0 0 0.1em;
+}
+
+.front-triangle{transform: translateY(-.85em) translateZ(.85em)  rotateX(45deg) ;}
+.front-right-triangle{transform: rotateY(45deg) translateY(-.85em) translateZ(.85em)  rotateX(45deg);}
+.left-triangle{transform: rotateY(90deg) translateY(-.85em) translateZ(.85em)  rotateX(45deg);}
+.back-left-triangle{transform: rotateY(135deg) translateY(-.85em) translateZ(.85em)  rotateX(45deg);}
+.back-triangle{transform: rotateY(180deg) translateY(-.85em) translateZ(.85em)  rotateX(45deg);}
+.back-right-triangle{transform: rotateY(225deg) translateY(-.85em) translateZ(.85em)  rotateX(45deg);}
+.right-triangle{transform: rotateY(270deg) translateY(-.85em) translateZ(.85em)  rotateX(45deg);}
+.front-left-triangle{transform: rotateY(315deg) translateY(-.85em) translateZ(.85em)  rotateX(45deg);}
+
+.floor{
+    width: 15em;
+    height: 15em;
+    background-image: 
+    radial-gradient(#0000, #000 80%),
+    repeating-conic-gradient(
+        from 45deg,
+        #111 0deg 90deg, 
+        #222 90deg 180deg);
+    background-size:100%, 1em 1em;
+    position: absolute;
+    transform:
+    translate(-50%, -50%)
+    rotateX(90deg);
+    top: 1em;
+}
+

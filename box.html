@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles9.css">
+</head>
+<body>
+    <div id="button" class="button" onclick="sumir('#form','#button')" >Ver Fundo</div>
+    <div class="background">
+    <div class="scene">
+        <div class="floor"></div>
+        <div class="vacina">
+            <div class="top-bottom"></div>
+            <div class="top-top"></div>
+            <div class="top-front"></div>
+            <div class="top-front-right"></div>
+            <div class="top-front-left"></div>
+            <div class="top-left"></div>
+            <div class="top-right"></div>
+            <div class="top-back-left"></div>
+            <div class="top-back"></div>
+            <div class="top-back-right"></div>
+            <div class="bottom-front"></div>
+            <div class="bottom-side"></div>
+            <div class="bottom-diagonal"></div>
+            <div class="bottom-diagonal-2"></div>
+            <div class="front">
+                <p>ci</p>
+            </div>
+            <div class="front-triangle"></div>
+            <div class="front-left">
+                <p>va</p>
+            </div>
+            <div class="front-left-triangle"></div>
+            <div class="left"></div>
+            <div class="left-triangle"></div>
+            <div class="back-left"></div>
+            <div class="back-left-triangle"></div>
+            <div class="back"></div>
+            <div class="back-triangle"></div>
+            <div class="back-right"></div>
+            <div class="back-right-triangle"></div>
+            <div class="right"></div>
+            <div class="right-triangle"></div>
+            <div class="front-right">
+                <p>na</p>
+            </div>
+            <div class="front-right-triangle"></div>
+        </div>
+        <div class="seringa"></div>
+    </div>
+    <div id="form" class="form">
+        <form id="fromulario">
+            <figure>
+            <label for="CPF">CPF</label><br>
+            <input type="text" required placeholder="XXX.XXX.XXX-XX">
+            <br>
+            <label for="Data_Nascimento">Data de nascimento</label><br>
+            <input type="date">
+            <br>
+            <label for="Carteira_SUS" >Carteira do SUS</label><br>
+            <input type="text" required placeholder="XXX XXXX XXXX XXXX">
+            <br>
+            <label for="CEP">CEP da residência</label><br>
+            <input type="text" required placeholder="XXXXX-XXX">
+            <br>
+            <label for="rua">Rua</label><br>
+            <input type="text" required placeholder="Nome da rua">
+            <br>
+            <label for="numero">Número</label><br>
+            <input type="text" required placeholder="Número da casa">
+            <br>
+            <label for="Complemento">Complemento</label><br>
+            <input type="text" placeholder=" Ex: Casa, Apartamento">
+            <br>
+            <label for="Bairro">Bairro</label><br>
+            <input list="Bairro" type="text" required placeholder="Nome do bairro">
+                <datalist id="Bairro" type="text">
+                    <option value="Afonso Pena">
+                        <option value="Alterosa">
+                        <option value="Alto São Vicente">
+                        <option value="Alvorada">
+                        <option value="Anchieta">
+                        <option value="Antônio Fonseca">
+                        <option value="Área Rural de Divinópolis">
+                        <option value="Bairro da Luz">
+                        <option value="Bela Vista">
+                        <option value="Belo Vale">
+                        <option value="Belvedere">
+                        <option value="Belvedere Ii">
+                        <option value="Bom Pastor">
+                        <option value="Campina Verde">
+                        <option value="Cantor Ind Coronel J Rabelo">
+                        <option value="Casa Nova">
+                        <option value="Catalão">
+                        <option value="Cemitério Vivos">
+                        <option value="Centro">
+                        <option value="Céu Azul">
+                        <option value="Chácara Bela Vista">
+                        <option value="Chácara Bom Retiro">
+                        <option value="Chácaras Belo Horizonte">
+                        <option value="Chanadour">
+                        <option value="Chs Belo Horizonte">
+                        <option value="Chs Bom Retiro">
+                        <option value="Cidade Jardim">
+                        <option value="Cohab Dom Cristiano">
+                        <option value="Conjunto Habitacional Dom Cristiano">
+                        <option value="Conjunto Habitacional Fco M Gontijo">
+                        <option value="Conjunto Habitacional Nilda Barros">
+                        <option value="Conjunto Habitacional O M Gontijo">
+                        <option value="Danilo Passos">
+                        <option value="Danilo Passos I">
+                        <option value="Danilo Passos II">
+                        <option value="Davanuze">
+                        <option value="Del-rey">
+                        <option value="Delegado Rei">
+                        <option value="Distrito Ind Coronel J Rabelo">
+                        <option value="Distrito Industrial Coronel Jovelino Rabelo">
+                        <option value="Divinópolis">
+                        <option value="Dom Cristiano">
+                        <option value="Dom Pedro II">
+                        <option value="Dom Quita">
+                        <option value="Dom Rosa">
+                        <option value="Dona Quita">
+                        <option value="Dona Rosa">
+                        <option value="Doutor Dulphe Poço Aguiar">
+                        <option value="Doutor José Thomaz">
+                        <option value="Dulphe Pinto de Aguiar">
+                        <option value="Dulphe Po‡o Aguiar">
+                        <option value="Eldorado">
+                        <option value="Esplanada">
+                        <option value="Fábio Notini">
+                        <option value="Floramar">
+                        <option value="Floresta">
+                        <option value="Gafanhoto">
+                        <option value="Geraldo Pereira">
+                        <option value="Grajaú">
+                        <option value="Halim Souki">
+                        <option value="Halin Souki">
+                        <option value="Icaraí">
+                        <option value="Icaraí II">
+                        <option value="Iii Prolg do Bairro Bom Pastor">
+                        <option value="Industrial">
+                        <option value="Interlados">
+                        <option value="Interlagos">
+                        <option value="Ipanema">
+                        <option value="Ipiranga">
+                        <option value="Itacolomi">
+                        <option value="Itaí">
+                        <option value="J Area Gonçalves">
+                        <option value="Jardim Acácias">
+                        <option value="Jardim Belvedere">
+                        <option value="Jardim Belvedere Ii">
+                        <option value="Jardim Betânia">
+                        <option value="Jardim Brasília">
+                        <option value="Jardim Candelária">
+                        <option value="Jardim Candidés">
+                        <option value="Jardim Copacabana">
+                        <option value="Jardim das Acácias">
+                        <option value="Jardim das Mansões">
+                        <option value="Jardim Nova América">
+                        <option value="Jardim Real">
+                        <option value="Jardinopolis">
+                        <option value="João Antônio Gonçalves">
+                        <option value="João Paulo II">
+                        <option value="José Tomaz">
+                        <option value="Jusa Fonseca">
+                        <option value="Juscelino Kubitschek">
+                        <option value="Juza Fonseca">
+                        <option value="Lagoa Mandarins">
+                        <option value="Levindo Paula Pereira">
+                        <option value="Levindo Poço Pereira">
+                        <option value="Liberdade">
+                        <option value="Mangabeiras">
+                        <option value="Manoel Valinhas">
+                        <option value="Mar E Terra">
+                        <option value="Marajó">
+                        <option value="Maria Helena">
+                        <option value="Maria Peçanha">
+                        <option value="Morada Nova">
+                        <option value="Morumbi">
+                        <option value="Nações">
+                        <option value="Ncl L Poço Pereira">
+                        <option value="Niterói">
+                        <option value="Nossa Senhora Conceição">
+                        <option value="Nossa Senhora da Conceição">
+                        <option value="Nossa Senhora das Graças">
+                        <option value="Nossa Senhora de Lourdes">
+                        <option value="Nossa Senhora Graças">
+                        <option value="Nova Fortaleza">
+                        <option value="Nova Holanda">
+                        <option value="Nova Suíça">
+                        <option value="Novo Paraíso">
+                        <option value="Oliveiras">
+                        <option value="Orion">
+                        <option value="Pacaembu">
+                        <option value="Padre Esutaquio">
+                        <option value="Padre Eustáquio">
+                        <option value="Padre Herculano Yanes">
+                        <option value="Padre Libério">
+                        <option value="Paraíso">
+                        <option value="Parque Ecologista Jardim CapitÆo Silva">
+                        <option value="Parque Jardim CapitÆo Silva">
+                        <option value="Planalto">
+                        <option value="Ponte Funda">
+                        <option value="Porto Velho">
+                        <option value="Primavera">
+                        <option value="Quinta das Palmeiras">
+                        <option value="Quintino">
+                        <option value="Rancho Alegre">
+                        <option value="Realengo">
+                        <option value="Residencial Castelo">
+                        <option value="Residencial Costa Azul">
+                        <option value="Residencial Doutor Walchir Resende Costa">
+                        <option value="Residencial Fonte Boa">
+                        <option value="Residencial Lagoa dos Mandarins">
+                        <option value="Residencial Morumbi">
+                        <option value="Residencial Terra Azul">
+                        <option value="Residencial Walchir Rua Costa">
+                        <option value="Sagrada Família">
+                        <option value="Santa Clara">
+                        <option value="Santa Lúcia">
+                        <option value="Santa Luzia">
+                        <option value="Santa Marta">
+                        <option value="Santa Rosa">
+                        <option value="Santa Tereza">
+                        <option value="Santo André">
+                        <option value="Santo Antônio">
+                        <option value="Santo Antônio Campos">
+                        <option value="Santos Dumont">
+                        <option value="São Caetano">
+                        <option value="São Domingos">
+                        <option value="São Francisco">
+                        <option value="São Geraldo">
+                        <option value="São João de Deus">
+                        <option value="São João Deus">
+                        <option value="São José">
+                        <option value="São Judas Tadeu">
+                        <option value="São Lucas">
+                        <option value="São Luís">
+                        <option value="São Miguel">
+                        <option value="São Roque">
+                        <option value="São Sebastião">
+                        <option value="Savassi">
+                        <option value="Serra Verde">
+                        <option value="Servidão Verde">
+                        <option value="Sidil">
+                        <option value="Sion">
+                        <option value="Terra Azul">
+                        <option value="Tietê">
+                        <option value="Vale do Sol">
+                        <option value="Vila Belo Horizonte">
+                        <option value="Vila Cruzeiro">
+                        <option value="Vila das Roseiras">
+                        <option value="Vila Espírito Santo">
+                        <option value="Vila Minas Gerais">
+                        <option value="Vila Romana">
+                        <option value="Vila Sol">
+                        <option value="Vivendas da Exposção">
+                        <option value="Vivendas Exposição">
+                        <option value="Xavante">
+                        <option value="Yanes">
+                        <option value="Zona Rural">
+                </datalist>
+            <br>
+            <label for="Telefone">Telefone de contato</label><br>
+            <input type="text" required placeholder="(+XX) XXX X-XXXX-XXXX">
+            <br><br>
+            <input type="button" value="Gravar" align="center" id="btn">
+            </figure>
+        </form>
+    </div>
+    </div>
+    <script>
+        function sumir(el,e2) {
+            var display = document.getElementById('form').style.display;
+            var content = document.getElementById('button').innerHTML;
+            if(display == "none"){
+                document.getElementById('form').style.display = 'block'; 
+                document.getElementById('button').innerHTML='Ver Fundo';
+            }
+            else{
+                document.getElementById('form').style.display = 'none';
+                document.getElementById('button').innerHTML='Ver Formulário';
+            }
+        }
+    </script>
+</body>
+</html>
