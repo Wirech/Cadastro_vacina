@@ -3,6 +3,14 @@
     --boxColor: #0ff7;
     --rotateSpeed:20s;
 }
+h1{
+    color: white;
+    position: relative;
+    top:-2em;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow:black 0 0 0.2em;
+}
 p{
     color: rgba(0, 0, 0, 0.877);
     text-align: center;
