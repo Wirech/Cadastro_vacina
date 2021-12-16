@@ -21,6 +21,12 @@ p{
     user-select:none;
     transition: .3s;
 }
+@media screen and (max-width: 600px){
+    p{
+       font-size: 65px;
+    }
+}
+
 .button:hover{
     background:rgba(10, 212, 212, 0.467);
     color:#ccc;
